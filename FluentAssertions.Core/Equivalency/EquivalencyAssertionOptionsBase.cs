@@ -429,6 +429,7 @@ namespace FluentAssertions.Equivalency
         /// Adds an assertion rule to the ones already added by default, and which is evaluated before all existing rules.
         /// NOTE: These assertion rules do not apply to the root object.
         /// </summary>
+        [Obsolete("This method will be removed in a future version.  Use `Using(IEquivalencyStep)` instead.")]
         public TSelf Using(IAssertionRule assertionRule)
         {
             userEquivalencySteps.Insert(0, new AssertionRuleEquivalencyStepAdaptor(assertionRule));
@@ -623,7 +624,7 @@ namespace FluentAssertions.Equivalency
             /// </param>
             public TSelf When(Expression<Func<ISubjectInfo, bool>> predicate)
             {
-                options.Using(new AssertionRule<TMember>(predicate, action));
+                options.userEquivalencySteps.Insert(0, new AssertionContextEquivalencyStep<TMember>(predicate, action));
                 return options;
             }
         }

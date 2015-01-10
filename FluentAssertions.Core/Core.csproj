@@ -65,6 +65,7 @@
     <Compile Include="Common\ProbingAdapterResolver.cs" />
     <Compile Include="Equivalency\AllPublicFieldsSelectionRule.cs" />
     <Compile Include="Equivalency\AssertionContext.cs" />
+    <Compile Include="Equivalency\AssertionContextEquivalencyStep.cs" />
     <Compile Include="Equivalency\AssertionRuleEquivalencyStep.cs" />
     <Compile Include="Equivalency\AssertionRuleEquivalencyStepAdaptor.cs" />
     <Compile Include="Equivalency\EnumEqualityStep.cs" />

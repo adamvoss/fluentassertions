@@ -1,5 +1,8 @@
+using System;
+
 namespace FluentAssertions.Equivalency
 {
+    [Obsolete("This interface will be removed in a future version.  Use `IEquivalencyStep` instead.")]
     public interface IAssertionRule
     {
         /// <summary>
