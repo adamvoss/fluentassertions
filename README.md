@@ -1,4 +1,4 @@
-<img src="./docs/logo/fluent_assertions.svg" width="350">
+<img src="https://github.com/adamvoss/fluentassertions/blob/develop/docs/logo/fluent_assertions.svg" width="350">
 
 ***"With Fluent Assertions, the assertions look beautiful, natural and most importantly, extremely readable"*** -[_Girish_](https://twitter.com/girishracharya)
 
